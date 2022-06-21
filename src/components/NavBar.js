@@ -34,7 +34,3 @@ const NavBar = (props) => {
 };
 
 export default NavBar;
-
-//https://www.selectmodel.com/london/article/urban-outfitters-europe-bdg-ss21-alfie
-
-//https://www.flaticon.com/search?type=icon&word=seagull&license=&color=&shape=&current_section=&author_id=&pack_id=&family_id=&style_id=&choice=&type=
