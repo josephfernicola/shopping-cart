@@ -23,12 +23,13 @@ const NavBar = (props) => {
         <Link to="/contact">
           <li>Contact</li>
         </Link>
+        </ul>
         <Link to="/cart">
-          <li className="cartAndNumber">
+          <div className="cartAndNumber">
             <div className="cart"><span>{cartNumber}</span><div>{<AiOutlineShoppingCart size={30} />}</div></div>
-          </li>
+          </div>
         </Link>
-      </ul>
+
     </nav>
   );
 };
