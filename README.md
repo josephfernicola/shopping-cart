@@ -1,1 +1,1 @@
-# shopping-cart
+Shopping Cart app built with React
