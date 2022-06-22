@@ -216,7 +216,6 @@ a {
   width: 10rem;
 }
 
-.removeAndAddCartItem:hover,
 .removeAndAddCartItem > *:hover {
   cursor: pointer;
 }
@@ -233,7 +232,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.cartPlusButton {
+.cartPlusButton, .cartMinusButton {
   padding-bottom: .3rem;
 }
 
@@ -275,13 +274,14 @@ a {
     padding-right: 0.1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    font-size: .8rem;
   }
-
   .nav-links {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 4rem;
     height: 8rem;
+    padding-left: 1.5rem;
   }
 
   .storeName {
@@ -296,9 +296,9 @@ a {
     width: 7rem;
   }
   .homepageImage > img {
-    height: 25rem;
-    width: 19rem;
-    margin-top: 2rem;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
   }
   .homepage {
     padding-left: 2.5rem;
@@ -333,6 +333,31 @@ a {
     display: grid;
     font-size: 1.5rem;
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  }
+
+  .product {
+    height: 25rem;
+  }
+
+  .productList, .cartDisplay {
+   justify-items: center;
+  }
+  .cartItem {
+    text-align: center;
+  }
+
+  .product, .cartItem {
+    height: 16rem;
+    width: 14rem;
+    font-size: .8rem;
+  }
+
+  .product > img, .cartItem > img {
+    height: 7.5rem;
+    width: 6.5rem;
+  }
+  .product > button {
+    width: 6rem;
   }
 
 

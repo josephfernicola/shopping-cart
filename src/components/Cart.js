@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { AiOutlineMinus } from "react-icons/ai";
 const Cart = (props) => {
   const { cartNumber, setCartNumber, cartItems, setCartItems } = props;
   const [total, setTotal] = useState(0);
@@ -47,7 +46,7 @@ const Cart = (props) => {
     cartItems.forEach((item) => {
       if (
         item.description ==
-        e.target.parentElement.parentElement.parentElement.children[1]
+        e.target.parentElement.parentElement.children[1]
           .textContent
       ) {
         item.quantity = item.quantity - 1;
@@ -93,8 +92,8 @@ const Cart = (props) => {
               <div>{arr.description}</div>
               <div>${arr.price}</div>
               <div className="removeAndAddCartItem">
-                <button className="cartMinusButton">
-                  {<AiOutlineMinus onClick={removeItem} />}
+                <button onClick={removeItem} className="cartMinusButton">
+                  —
                 </button>
                 <div>{arr.quantity}</div>
                 <button className="cartPlusButton" onClick={addItem}>
