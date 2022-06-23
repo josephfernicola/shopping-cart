@@ -231,9 +231,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .cartPlusButton, .cartMinusButton {
   padding-bottom: .3rem;
+}
+
+.cartMinusButton{
+  font-size: .9rem;
 }
 
 .price {
