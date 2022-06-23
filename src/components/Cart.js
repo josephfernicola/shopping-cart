@@ -72,12 +72,17 @@ const Cart = (props) => {
     });
     setCartItems(cartItems);
   };
+
+  function roundToTwo(num) {
+    return +(Math.round(num + "e+2")  + "e-2");
+}
+
   const calculateTotal = () => {
     console.log("cart Items", cartItems);
     const totalPrice = cartItems.reduce((total, item) => {
       console.log(`Total: ${total}`);
       console.log(`Item: ${item.price * item.quantity}`);
-      return total + item.price * item.quantity;
+      return roundToTwo(total + item.price * item.quantity)
     }, 0);
     setTotal(totalPrice);
   };
