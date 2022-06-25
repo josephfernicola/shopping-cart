@@ -15,7 +15,9 @@ function App() {
             <strong>We don't follow trends, we are the trends</strong>
           </div>
           <Link to="/products">
-            <button className="homepageButton"><strong>Shop Now</strong></button>
+            <button className="homepageButton">
+              <strong>Shop Now</strong>
+            </button>
           </Link>
         </div>
         <div className="homepageImage">

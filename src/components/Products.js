@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import womanJeans from "../images/womanJeans.webp";
 import womanDress from "../images/womanDress.jpeg";
 import romper from "../images/romper.jpeg";
@@ -34,8 +34,12 @@ const Products = (props) => {
         id: uniqid(),
       },
     ]);
+    e.target.parentElement.children[3].textContent = "✓ Added to Cart!";
+
+    setTimeout(() => {
+      e.target.parentElement.children[3].textContent = "";
+    }, 1000);
   };
-  //console.log("product Cart item", cartItems);
 
   return (
     <div>
@@ -47,6 +51,7 @@ const Products = (props) => {
             <div>$</div>
             <div>62.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -56,17 +61,17 @@ const Products = (props) => {
             <div>$</div>
             <div>38.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
           <img src={romper} alt="Romper"></img>
-          <div>
-           Sleeveless Strapless Summer Romper
-          </div>
+          <div>Sleeveless Strapless Summer Romper</div>
           <div className="price">
             <div>$</div>
             <div>22.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -76,6 +81,7 @@ const Products = (props) => {
             <div>$</div>
             <div>26.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -85,6 +91,7 @@ const Products = (props) => {
             <div>$</div>
             <div>32.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -94,6 +101,7 @@ const Products = (props) => {
             <div>$</div>
             <div>107.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -103,6 +111,7 @@ const Products = (props) => {
             <div>$</div>
             <div>91.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -112,6 +121,7 @@ const Products = (props) => {
             <div>$</div>
             <div>39.95</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -121,6 +131,7 @@ const Products = (props) => {
             <div>$</div>
             <div>43.00</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -130,6 +141,7 @@ const Products = (props) => {
             <div>$</div>
             <div>14.95</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -139,6 +151,7 @@ const Products = (props) => {
             <div>$</div>
             <div>34.95</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
         <li className="product">
@@ -148,6 +161,7 @@ const Products = (props) => {
             <div>$</div>
             <div>24.95</div>
           </div>
+          <div className="addedToCartMessage"></div>
           <button onClick={addToCart}>Add To Cart</button>
         </li>
       </ul>
