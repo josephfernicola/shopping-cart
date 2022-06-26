@@ -373,7 +373,7 @@ a {
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
   }
   .product {
-    height: 19.3rem;
+    height: 22rem;
   }
 
   .product > img,
@@ -385,7 +385,7 @@ a {
   .product,
   .cartItem {
     display: grid;
-    grid-template-rows: 3fr 0.1fr 0.1fr 0.5fr;
+    grid-template-rows: 3fr 0.1fr 0.3fr .8fr 1fr;
     align-items: center;
     justify-items: center;
     font-size: 0.7rem;
