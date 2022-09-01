@@ -1,5 +1,9 @@
 Shopping Cart app built with React
 
+
+Live Demo: https://josephfernicola.github.io/shopping-cart/
+
+
 Icons from:
 
 https://www.selectmodel.com/london/article/urban-outfitters-europe-bdg-ss21-alfie

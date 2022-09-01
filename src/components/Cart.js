@@ -37,8 +37,6 @@ const Cart = (props) => {
 
   useEffect(() => {
     calculateTotal();
-    console.log("total", total);
-    console.log("cart #", cartNumber);
   }, [cartNumber, cartItems]);
 
   const removeItem = (e) => {
@@ -107,10 +105,7 @@ const Cart = (props) => {
   };
 
   const calculateTotal = () => {
-    console.log("cart Items", cartItems);
     const totalPrice = cartItems.reduce((total, item) => {
-      console.log(`Total: ${total}`);
-      console.log(`Item: ${item.price * item.quantity}`);
       return total + item.price * item.quantity;
     }, 0);
     setTotal(totalPrice);
